@@ -1,0 +1,99 @@
+body {
+  background-color: lightgrey;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  padding: 10px;
+  text-align: left;
+}
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.teamsheader {
+  border: 2px solid;
+  padding: 5px;
+}
+
+.teamlayout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.teamcard {
+  text-align: left;
+  border: 1px solid;
+  padding: 5px;
+}
+
+.playerlist {
+  border: 1px solid;
+  padding: 5px;
+  height: 80vh;
+  overflow-y: auto;
+}
+
+.playercard {
+  padding: 5px;
+  white-space: nowrap;
+}
+
+.playercardpick {
+  border: none;
+  color: black;
+  background-color: inherit;
+}
+
+.playercardpick:hover {
+  background: #eee;
+}
+
+.playercardinfo {
+  text-align: left;
+  margin: 0 auto;
+  padding: 5px;
+  border: none;
+  color: black;
+  background-color: inherit;
+}
+
+.playercardinfo:hover {
+  background: #eee;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.positionsection {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0px;
+}
+
+.positionsection .position {
+  grid-column: 1;
+  padding: 5px;
+}
+
+.positionsection .players {
+  grid-column: 2;
+}
+
+.layoutgrid {
+  display: grid;
+  grid-template-columns: 20% auto;
+  column-gap: 10px;
+}
+
+.searchplayers {
+  padding: 10px;
+  background-color: inherit;
+}
